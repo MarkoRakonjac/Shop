@@ -1,0 +1,133 @@
+.main-footer {
+  color: white;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .info {
+    color: #598191;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer-top {
+    padding: 50px 0;
+    background-color: #85C3DC;
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .footer-bottom {
+    padding: 15px 0;
+  }
+  .tags {
+    margin-top: -10px;
+    li {
+      float: left;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 6px 10px;
+      background-color: #95D9F6;
+    }
+  }
+  .soc-net {
+    text-align: center;
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-indent: -9999px;
+        &:hover {
+          opacity: .8;
+        }
+        &.ks {
+          background-image: url("../img/krojacevaskola.png");
+        }
+        &.fb {
+          background-image: url("../img/facebook.png");
+        }
+        &.tw {
+          background-image: url("../img/twitter.png");
+        }
+        &.in {
+          background-image: url("../img/instagram.png");
+        }
+        &.yt {
+          background-image: url("../img/youtube.png");
+        }
+      }
+    }
+  }
+  .footer-nav {
+    float: right;
+    li {
+      float: left;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    a {
+      padding: 0 0 3px;
+      font-size: 12px;
+      color: $link-color;
+    }
+  }
+}
+
+#back-to-top {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  text-indent: -9999px;
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background-image: url("../img/arrow.png");
+    background-size: cover;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  &:hover {
+    background-color: white;
+    &:after {
+      background-image: url("../img/arrow-blue.png");
+    }
+  }
+}

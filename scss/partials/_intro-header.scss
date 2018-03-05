@@ -1,0 +1,29 @@
+.intro-header {
+  position: relative;
+  margin-bottom: 45px;
+  h2 {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    &:after, &:before {
+      display: none;
+    }
+    span {
+      font-size: 70px;
+      color: #FFCE67;
+      display: block;
+    }
+  }
+  #intro-slider {
+    display: none;
+  }
+}
+

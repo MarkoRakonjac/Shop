@@ -1,0 +1,137 @@
+.main-header {
+  .top-bar {
+    padding: 9px 0;
+    a {
+      color: $main-color;
+      &:hover {
+        color: $link-hover;
+      }
+    }
+    .info {
+      float: left;
+    }
+    .login {
+      float: right;
+      text-transform: uppercase;
+    }
+  }
+  .nav {
+    li {
+      a {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .navbar {
+    background-color: white;
+    margin-bottom: 0;
+    .navbar-toggle {
+      float: left;
+      padding: 0;
+      margin-top: 14px;
+      margin-bottom: 0;
+      margin-right: 10px;
+      border: none;
+      border-radius: 0;
+      .icon-bar {
+        background-color: black;
+        width: 20px;
+        height: 4px;
+        @include border-radius(2px);
+        & + .icon-bar {
+          margin-top: 2px;
+        }
+      }
+    }
+    .navbar-nav {
+      margin-top: 14px;
+    }
+    >.container {
+      position: relative;
+    }
+  }
+  .logo {
+    float: left;
+    width: 58px;
+    margin: 0;
+    margin-top: 13px;
+  }
+  .navbar-header {
+    margin: 0;
+  }
+  .search-cart-holder {
+    position: absolute;
+    right: 23px;
+    top: 10px;
+    .search, .cart {
+      display: inline-block;
+    }
+    .search {
+      margin-right: 10px;
+      position: relative;
+      top: -4px;
+      input {
+        height: 26px;
+        width: 120px;
+        padding-right: 26px;
+        padding-left: 6px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        box-shadow: none;
+        border-radius: 0;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-color: black;
+        }
+      }
+      img {
+        width: 17px;
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        cursor: pointer;
+      }
+    }
+    .cart {
+      position: relative;
+      img {
+        width: 21px;
+      }
+      .badge {
+        position: absolute;
+        bottom: -8px;
+        right: -8px;
+        padding: 4px 6px 3px;
+        background-color: #CC0000;
+      }
+    }
+  }
+}
+
+.nav {
+  li {
+    a {
+      border-bottom: 2px solid transparent;
+      text-align: center;
+      text-transform: uppercase;
+      display: table;
+      margin: 0 auto;
+      &:hover {
+        border-color: $nav-active;
+      }
+    }
+  }
+  .active {
+    a {
+      border-bottom: 2px solid $nav-active;
+    }
+  }
+  >li>a {
+    &:focus, &:hover {
+      background-color: transparent;
+    }
+  }
+}

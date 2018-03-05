@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Shop</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Main header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="top-bar">
+        <div class="clearfix">
+          <a href="tel:+3811155555555" class="info">+381 11 555 55 555</a>
+          <a href="#" class="login">Prijavi se</a>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header clearfix">
+          <!-- Collapse button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          <!-- Collapse button END -->
+          <!-- Logo -->
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Shop logo" class="img-responsive">
+            </a>
+            </h1>
+          <!-- Logo END -->
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Naslovna</a></li>
+            <li><a href="#">Prodavnica</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="search-cart-holder">
+          <span class="search">
+              <input  type="text" class="form-control search-field" placeholder="Search...">
+              <img src="img/search-icon.png" alt="Search" class="img-responsive" >
+            </span>
+          <a href="#" class="cart">
+              <img src="img/cart-icon.png" alt="Cart" class="img-responsive">
+              <span class="badge"></span>
+            </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main header END -->
+  <main>
+    <article id="product-holder">
+      <script id="my-template" type="template">
+        <div class="container">
+          <!-- Product details item  -->
+          <section class="product-details">
+            <span class="bread-crumbs">
+          <a class="arrow-back" href="index.html"></a>
+          Zenska kolekcija Cosmos</span>
+            <article class="product-item-details">
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="product-item-img">
+                    <img class="img-responsive placeholder " src="img/products/{{imgSrc}}.jpg" alt="Placeholder">
+                  </div>
+                  <ul class="thumbnails list-reset clearfix">
+                    <li>
+                      <a href="img/products/product3.jpg">
+                      <img class="img-responsive thumbnail" src="img/products/product3.jpg" >
+                    </a>
+                    </li>
+                    <li>
+                      <a href="img/products/product8.jpg">
+                      <img  class="img-responsive thumbnail" src="img/products/product8.jpg">
+                    </a>
+                    </li>
+                    <li>
+                      <a href="img/products/product5.jpg">
+                      <img  class="img-responsive thumbnail" src="img/products/product5.jpg">
+                    </a>
+                    </li>
+                    <li>
+                      <a href="img/products/product1.jpg">
+                      <img  class="img-responsive thumbnail" src="img/products/product1.jpg">
+                    </a>
+                    </li>
+                    <li>
+                      <a href="img/products/product10.jpg">
+                      <img  class="img-responsive thumbnail" src="img/products/product10.jpg">
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-7">
+                  <h3 class="product-item-name">{{productTitle}}</h3>
+                  <p class="product-item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat. </p>
+                  <div class="product-item-colors">
+                    <span>Boja:</span>
+                    <span>
+                    <ul class="product-item-color  list-reset clearfix">
+                      <li><a class="soft-blue" href="#"></a></li>
+                      <li><a class="dark-moderate-cyan" href="#"></a></li>
+                      <li><a class="very-dark-gray" href="#"></a></li>
+                    </ul>
+                  </span>
+                  </div>
+                  <div class="product-item-price">
+                    <span>Cena:</span>
+                    <span> {{price}} rsd</span>
+                  </div>
+                  <div class="product-item-delivery">
+                    <span>Dostava:</span>
+                    <span>Besplatna</span>
+                  </div>
+                  <div class="product-item-quantity">
+                    <span>Kolicina:</span>
+                    <span><input type="text" value="1" ></span>
+                  </div>
+                  <button type="submit" class="product-item-btn" href="#">Ubaci u korpu</button>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Product details item  END -->
+
+          <!-- Product Section -->
+          <section class="products">
+            <h4 class="other-recomended-products"><a href="#">Izdvajamo</a></h4>
+            <div class="row">
+              <!-- Product item -->
+              <div class="product-item-holder col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <article class="product-item">
+                  <div class="product-img-holder">
+                    <img class="img-responsive" src="img/products/product8.jpg" alt="products">
+                    <div class="product-item-icons">
+                      <ul class="list-reset clearfix">
+                        <li><a class="shop-icon" href="#"></a></li>
+                        <li><a class="view-icon" href="#"></a></li>
+                        <li><a class="like-icon" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-info clearfix">
+                    <h4 class="product-name">Ženska bluza <span>Cosmos</span></h4>
+                    <h4 class="product-price">2.500 rsd</h4>
+                  </div>
+                </article>
+              </div>
+              <!-- Product item End -->
+              <!-- Product item -->
+              <div class="product-item-holder col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <article class="product-item">
+                  <div class="product-img-holder">
+                    <img class="img-responsive" src="img/products/product10.jpg" alt="products">
+                    <div class="product-item-icons">
+                      <ul class="list-reset clearfix">
+                        <li><a class="shop-icon" href="#"></a></li>
+                        <li><a class="view-icon" href="#"></a></li>
+                        <li><a class="like-icon" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-info clearfix">
+                    <h4 class="product-name">Ženska bluza<span>Cosmos</span></h4>
+                    <h4 class="product-price">4.500 rsd</h4>
+                  </div>
+                </article>
+              </div>
+              <!-- Product item End -->
+              <!-- Product item -->
+              <div class="product-item-holder col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <article class="product-item">
+                  <div class="product-img-holder">
+                    <img class="img-responsive" src="img/products/product13.jpg" alt="products">
+                    <div class="product-item-icons">
+                      <ul class="list-reset clearfix">
+                        <li><a class="shop-icon" href="#"></a></li>
+                        <li><a class="view-icon" href="#"></a></li>
+                        <li><a class="like-icon" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-info clearfix">
+                    <h4 class="product-name">Muški duks<span>Frogster</span></h4>
+                    <h4 class="product-price">3.000 rsd</h4>
+                  </div>
+                </article>
+              </div>
+              <!-- Product item End -->
+              <!-- Product item -->
+              <div class="product-item-holder  col-xs-6 hidden-sm hidden-md col-lg-3">
+                <article class="product-item">
+                  <div class="product-img-holder">
+                    <img class="img-responsive" src="img/products/product14.jpg" alt="products">
+                    <div class="product-item-icons">
+                      <ul class="list-reset clearfix">
+                        <li><a class="shop-icon" href="#"></a></li>
+                        <li><a class="view-icon" href="#"></a></li>
+                        <li><a class="like-icon" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-info clearfix">
+                    <h4 class="product-name">Muška košulja<span>Frogster</span></h4>
+                    <h4 class="product-price">2.800 rsd</h4>
+                  </div>
+                </article>
+              </div>
+              <!-- Product item End -->
+            </div>
+          </section>
+          <!-- Product Section END -->
+        </div>
+      </script>
+    </article>
+  </main>
+  <!-- Main footer -->
+  <footer class="main-footer">
+    <!-- Footer top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- Info -->
+          <div class="col-sm-3">
+            <h3>Shop</h3>
+            <p class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            <p><a href="mailto:info@krojacevaskola.com">info@krojacevaskola.com</a></p>
+            <p><a href="tel:+381 11 555 55 555">+381 11 555 55 555</a></p>
+            <p>Nikolaja Ostrovskog 3, Zemun, Srbija</p>
+          </div>
+          <!-- Info END -->
+          <!-- Users -->
+          <div class="col-sm-3 col-md-offset-1 hidden-xs">
+            <h4>Korisnici</h4>
+            <ul>
+              <li><a href="#">Moj nalog</a></li>
+              <li><a href="#">Kako kupiti</a></li>
+              <li><a href="#">Vodič</a></li>
+            </ul>
+          </div>
+          <!-- Users END -->
+          <!-- Tags -->
+          <div class="col-sm-6 col-md-5 hidden-xs">
+            <h4>Tagovi</h4>
+            <ul class="tags">
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Zimska kolekcija</a></li>
+              <li><a href="#">Haljine</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+            </ul>
+          </div>
+          <!-- Tags END -->
+        </div>
+      </div>
+    </div>
+    <!-- Footer top END -->
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <div class="container clearfix">
+        <!-- Social icons -->
+        <ul class="soc-net">
+          <li><a href="#" class="ks" target="_blank">Krojačeva škola</a></li>
+          <li><a href="#" class="fb" target="_blank">Facebook</a></li>
+          <li><a href="#" class="tw" target="_blank">Twitter</a></li>
+          <li><a href="#" class="in" target="_blank">Instagram</a></li>
+          <li><a href="#" class="yt" target="_blank">YouTube</a></li>
+        </ul>
+        <!-- Social icons END -->
+        <!-- Footer nav -->
+        <ul class="footer-nav nav clearfix hidden-xs">
+          <li><a href="#">O nama</a></li>
+          <li><a href="#">Uslovi korišćenja</a></li>
+          <li><a href="#">Novosti</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <!-- Footer nav END -->
+      </div>
+      <!-- Back to top -->
+      <span id="back-to-top">Back to top</span>
+      <!-- Back to top END -->
+    </div>
+    <!-- Footer bottom END -->
+  </footer>
+  <!-- Main footer END -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/product-details.js"></script>
+</body>
+
+</html>

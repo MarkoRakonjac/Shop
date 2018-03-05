@@ -1,0 +1,46 @@
+.collections-holder {
+  a {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    display: table;
+    margin: 0 auto 30px;
+    img {
+      opacity: .8;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.frame {
+  position: relative;
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 90px;
+    height: 40px;
+    border: 2px solid white;
+  }
+  &:before {
+    border-bottom: none;
+    border-right: none;
+    top: 10px;
+    left: 10px;
+  }
+  &:after {
+    border-top: none;
+    border-left: none;
+    bottom: 10px;
+    right: 10px;
+  }
+}
